@@ -364,7 +364,7 @@
 
   <!-- SLIDE 1 : COVER -->
   <div class="slide active" id="s1">
-    <img class="bg" src="assets/img1.jpg" alt="Happy 16th Birthday Sofia Sy Su">
+    <img class="bg" src="data:image/jpeg;base64,__IMG1__" alt="Happy 16th Birthday Sofia Sy Su">
     <div class="balloon" style="left:8%;  width:8.5%;  animation-duration:11s; animation-delay:-2s;"><svg viewBox="0 0 60 80"><ellipse cx="30" cy="30" rx="26" ry="30" fill="#2f6fd6"/><ellipse cx="21" cy="18" rx="7" ry="10" fill="rgba(255,255,255,0.35)"/><polygon points="26,58 34,58 30,66" fill="#2f6fd6"/><path d="M30 66 C 28 70, 33 74, 30 80" stroke="rgba(255,255,255,0.55)" stroke-width="1.4" fill="none"/></svg></div>
     <div class="balloon" style="left:22%; width:7%;    animation-duration:9s;  animation-delay:-5s;"><svg viewBox="0 0 60 80"><ellipse cx="30" cy="30" rx="26" ry="30" fill="#6fb1ff"/><ellipse cx="21" cy="18" rx="7" ry="10" fill="rgba(255,255,255,0.35)"/><polygon points="26,58 34,58 30,66" fill="#6fb1ff"/><path d="M30 66 C 28 70, 33 74, 30 80" stroke="rgba(255,255,255,0.55)" stroke-width="1.4" fill="none"/></svg></div>
     <div class="balloon" style="left:38%; width:9.5%;  animation-duration:13s; animation-delay:-1s;"><svg viewBox="0 0 60 80"><ellipse cx="30" cy="30" rx="26" ry="30" fill="#1f4fa8"/><ellipse cx="21" cy="18" rx="7" ry="10" fill="rgba(255,255,255,0.35)"/><polygon points="26,58 34,58 30,66" fill="#1f4fa8"/><path d="M30 66 C 28 70, 33 74, 30 80" stroke="rgba(255,255,255,0.55)" stroke-width="1.4" fill="none"/></svg></div>
@@ -380,7 +380,7 @@
 
   <!-- SLIDE 2 : BLOW CANDLES -->
   <div class="slide" id="s2">
-    <img class="bg" src="assets/img2.jpg" alt="Blow your candles">
+    <img class="bg" src="data:image/jpeg;base64,__IMG2__" alt="Blow your candles">
     <div class="hint">
       <div><b>Make a wish!</b> Hold the button (or hold the Space bar) for 3 seconds, or turn on your mic and blow 🎂</div>
       <div>
@@ -397,30 +397,30 @@
 
   <!-- SLIDE 3 : CAMERA -->
   <div class="slide" id="s3">
-    <img class="bg" src="assets/img3.jpg" alt="Camera">
+    <img class="bg" src="data:image/jpeg;base64,__IMG3__" alt="Camera">
     <div class="skip-hint">tap to skip ▸</div>
   </div>
 
   <!-- SLIDE 4 : CAMERA FLASH -->
   <div class="slide" id="s4">
-    <img class="bg" src="assets/img4.jpg" alt="Camera flash">
+    <img class="bg" src="data:image/jpeg;base64,__IMG4__" alt="Camera flash">
     <div class="whiteflash"></div>
     <div class="skip-hint">tap to skip ▸</div>
   </div>
 
   <!-- SLIDE 5 : PHOTOBOOTH STRIP -->
   <div class="slide" id="s5">
-    <img class="bg" src="assets/img4.jpg" alt="">
-    <img class="strip" src="assets/img5.jpg" alt="Photobooth strip">
+    <img class="bg" src="data:image/jpeg;base64,__IMG4__" alt="">
+    <img class="strip" src="data:image/jpeg;base64,__IMG5__" alt="Photobooth strip">
     <div class="skip-hint">tap to skip ▸</div>
   </div>
 
   <!-- SLIDE 6 : POLAROID GRID -->
   <div class="slide" id="s6">
-    <img class="bg" src="assets/img6.jpg" alt="Photos">
-    <div class="col colL" style="--fullbg:url('./assets/img6.jpg')"></div>
-    <div class="col colM" style="--fullbg:url('./assets/img6.jpg')"></div>
-    <div class="col colR" style="--fullbg:url('./assets/img6.jpg')"></div>
+    <img class="bg" src="data:image/jpeg;base64,__IMG6__" alt="Photos">
+    <div class="col colL" style="--fullbg:url('data:image/jpeg;base64,__IMG6__')"></div>
+    <div class="col colM" style="--fullbg:url('data:image/jpeg;base64,__IMG6__')"></div>
+    <div class="col colR" style="--fullbg:url('data:image/jpeg;base64,__IMG6__')"></div>
     <button class="nav-arrow" id="toS7" onclick="goTo(7)" aria-label="Next">
       <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </button>
@@ -428,14 +428,14 @@
 
   <!-- SLIDE 7 : ENVELOPE -->
   <div class="slide" id="s7">
-    <img class="bg" src="assets/img7.jpg" alt="Envelope with letter">
+    <img class="bg" src="data:image/jpeg;base64,__IMG7__" alt="Envelope with letter">
     <div class="env-tap" onclick="openEnvelope()"></div>
     <div class="tap-hint">💌 tap the envelope to open it</div>
   </div>
 
   <!-- SLIDE 8 : LETTER -->
   <div class="slide" id="s8">
-    <img class="bg" src="assets/img8.jpg" alt="Birthday letter">
+    <img class="bg" src="data:image/jpeg;base64,__IMG8__" alt="Birthday letter">
     <button class="nav-arrow back-arrow show" onclick="restart()" aria-label="Back to start">
       <svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M11 6l-6 6 6 6" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </button>
@@ -776,16 +776,6 @@
     goTo(1);
   };
 })();
-
-<script>
-  // GitHub Pages-friendly image diagnostics.
-  document.querySelectorAll('img').forEach(function(img) {
-    img.addEventListener('error', function() {
-      console.error('Image failed to load:', img.src);
-    });
-  });
-</script>
-
 </script>
 </body>
 </html>
